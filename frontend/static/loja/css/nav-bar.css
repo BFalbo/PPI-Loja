@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit');
 
-* {
+header, header * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -13,18 +13,18 @@ html {
 
 header {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+
+    /* margin: 0; */
 }
 
-a {
+header > nav > ul > li > a {
     color: inherit;
     text-decoration: none;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(0,0,0,.1);
-}
 
 .logo-loja {
     box-sizing: content-box;
@@ -32,9 +32,10 @@ header {
     width: 70px;
 }
 
-.logo-loja > svg {
+.logo-loja > img {
     display: block;
     width: 100%;
+    height: 70px;
 }
 
 nav > ul {
@@ -66,7 +67,7 @@ nav > ul > li:hover {
 .nav-right > ul > li:last-child {
     border-right: none;
 }
-
+/* 
 main {
     display: flex;
     height: calc(100vh - 70px);
@@ -149,10 +150,10 @@ main {
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
-}
+} */
 
 @media screen and (max-width: 1200px) {
-    .logo-loja > svg {
+    .logo-loja > img {
       height: 60px;
       width: 60px;
     }
@@ -169,7 +170,7 @@ main {
       line-height: 60px;
       padding: 0 20px;
     }
-    .product-info > h1 {
+    /* .product-info > h1 {
         font-size: 2.2rem;
     }
 
@@ -187,11 +188,11 @@ main {
     }
     .right > img {
       left: -80px;
-    }
+    } */
 }
 
 @media screen and (max-width: 900px) {
-  .logo-loja > svg {
+  .logo-loja > img {
     height: 50px;
     width: 50px;
   }
@@ -210,7 +211,7 @@ main {
     padding: 0 15px;
   }
   
-  .right > img {
-    left: -60px;
+  /* .right > img {
+    left: -60px; */
   }
 }
