@@ -8,3 +8,11 @@ body
     height: 100%;
     width: 100%;
 }
+
+#blank-image
+{
+    height: 30em;
+    object-fit: none;
+    position: relative;
+    right: -30%;
+}
