@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="../static/loja/css/footer.css">
 	<link rel="stylesheet" href="../static/loja/css/input-search.css">
 	<link rel="stylesheet" href="../static/loja/css/carousel.css">
+	<link rel="stylesheet" href="../static/loja/css/card-categoria.css">
+	<!-- <link rel="stylesheet" href="../static/loja/css/card-iterativo.css"> -->
 </head>
 <!-- Head / END -->
 
@@ -55,94 +57,132 @@
 
 	<section class="main-section">
 		<!-- Corpo central da página -->
-<div class="carousel-section" style="height: 100%;">
-<div class='slider-wrapper'>
-	<input checked id='slide1' name='slides' type='radio'>
-	<input id='slide2' name='slides' type='radio'>
-	<input id='slide3' name='slides' type='radio'>
-	<input id='slide4' name='slides' type='radio'>
-	<input id='slide5' name='slides' type='radio'>
-	<input id='slide6' name='slides' type='radio'>
-	<input id='slide7' name='slides' type='radio'>
-	<input id='slide8' name='slides' type='radio'>
-	<input id='slide9' name='slides' type='radio'>
-	<input id='slide10' name='slides' type='radio'>
-	<!-- Seta esquerda -->
-	<div class='slider-arrow-nav'>
-		<label class='nav-arrow prev' for='slide1'></label>
-		<label class='nav-arrow prev' for='slide2'></label>
-		<label class='nav-arrow prev' for='slide3'></label>
-		<label class='nav-arrow prev' for='slide4'></label>
-		<label class='nav-arrow prev' for='slide5'></label>
-		<label class='nav-arrow prev' for='slide6'></label>
-		<label class='nav-arrow prev' for='slide7'></label>
-		<label class='nav-arrow prev' for='slide8'></label>
-		<label class='nav-arrow prev' for='slide9'></label>
-		<label class='nav-arrow prev' for='slide10'></label>
-	</div>
-	<!-- Seta esquerda / END -->
-	<!-- Seta direita -->
-	<div class='slider-arrow-nav'>
-		<label class='nav-arrow next' for='slide1'></label>
-		<label class='nav-arrow next' for='slide2'></label>
-		<label class='nav-arrow next' for='slide3'></label>
-		<label class='nav-arrow next' for='slide4'></label>
-		<label class='nav-arrow next' for='slide5'></label>
-		<label class='nav-arrow next' for='slide6'></label>
-		<label class='nav-arrow next' for='slide7'></label>
-		<label class='nav-arrow next' for='slide8'></label>
-		<label class='nav-arrow next' for='slide9'></label>
-		<label class='nav-arrow next' for='slide10'></label>
-	</div>
-	<!-- Seta direita / END -->
-	<!-- Pontos -->
-	<div class='slider-nav'>
-		<label class='nav-button' for='slide1'></label>
-		<label class='nav-button' for='slide2'></label>
-		<label class='nav-button' for='slide3'></label>
-		<label class='nav-button' for='slide4'></label>
-		<label class='nav-button' for='slide5'></label>
-		<label class='nav-button' for='slide6'></label>
-		<label class='nav-button' for='slide7'></label>
-		<label class='nav-button' for='slide8'></label>
-		<label class='nav-button' for='slide9'></label>
-		<label class='nav-button' for='slide10'></label>
-	</div>
-	<!-- Pontos / END -->
-	<div class='slider-content'>
-		<div class='slide slide1'>
-			<img src='https://unsplash.it/1920/1080/?random=1'>
+		<div class="carousel-section">
+		<div class='slider-wrapper'>
+			<input checked id='slide1' name='slides' type='radio'>
+			<input id='slide2' name='slides' type='radio'>
+			<input id='slide3' name='slides' type='radio'>
+			<input id='slide4' name='slides' type='radio'>
+			<input id='slide5' name='slides' type='radio'>
+			<input id='slide6' name='slides' type='radio'>
+			<input id='slide7' name='slides' type='radio'>
+			<input id='slide8' name='slides' type='radio'>
+			<input id='slide9' name='slides' type='radio'>
+			<input id='slide10' name='slides' type='radio'>
+			<!-- Seta esquerda -->
+			<div class='slider-arrow-nav'>
+				<label class='nav-arrow prev' for='slide1'></label>
+				<label class='nav-arrow prev' for='slide2'></label>
+				<label class='nav-arrow prev' for='slide3'></label>
+				<label class='nav-arrow prev' for='slide4'></label>
+				<label class='nav-arrow prev' for='slide5'></label>
+				<label class='nav-arrow prev' for='slide6'></label>
+				<label class='nav-arrow prev' for='slide7'></label>
+				<label class='nav-arrow prev' for='slide8'></label>
+				<label class='nav-arrow prev' for='slide9'></label>
+				<label class='nav-arrow prev' for='slide10'></label>
+			</div>
+			<!-- Seta esquerda / END -->
+			<!-- Seta direita -->
+			<div class='slider-arrow-nav'>
+				<label class='nav-arrow next' for='slide1'></label>
+				<label class='nav-arrow next' for='slide2'></label>
+				<label class='nav-arrow next' for='slide3'></label>
+				<label class='nav-arrow next' for='slide4'></label>
+				<label class='nav-arrow next' for='slide5'></label>
+				<label class='nav-arrow next' for='slide6'></label>
+				<label class='nav-arrow next' for='slide7'></label>
+				<label class='nav-arrow next' for='slide8'></label>
+				<label class='nav-arrow next' for='slide9'></label>
+				<label class='nav-arrow next' for='slide10'></label>
+			</div>
+			<!-- Seta direita / END -->
+			<!-- Pontos -->
+			<div class='slider-nav'>
+				<label class='nav-button' for='slide1'></label>
+				<label class='nav-button' for='slide2'></label>
+				<label class='nav-button' for='slide3'></label>
+				<label class='nav-button' for='slide4'></label>
+				<label class='nav-button' for='slide5'></label>
+				<label class='nav-button' for='slide6'></label>
+				<label class='nav-button' for='slide7'></label>
+				<label class='nav-button' for='slide8'></label>
+				<label class='nav-button' for='slide9'></label>
+				<label class='nav-button' for='slide10'></label>
+			</div>
+			<!-- Pontos / END -->
+			<div class='slider-content'>
+				<div class='slide slide1'>
+					<img src='https://unsplash.it/1920/1080/?random=1'>
+				</div>
+				<div class='slide slide2'>
+					<img src='https://unsplash.it/1920/1080/?random=2'>
+				</div>
+				<div class='slide slide3'>
+					<img src='https://unsplash.it/1920/1080/?random=3'>
+				</div>
+				<div class='slide slide4'>
+					<img src='https://unsplash.it/1920/1080/?random=4'>
+				</div>
+				<div class='slide slide5'>
+					<img src='https://unsplash.it/1920/1080/?random=5'>
+				</div>
+				<div class='slide slide6'>
+					<img src='https://unsplash.it/1920/1080/?random=6'>
+				</div>
+				<div class='slide slide7'>
+					<img src='https://unsplash.it/1920/1080/?random=7'>
+				</div>
+				<div class='slide slide8'>
+					<img src='https://unsplash.it/1920/1080/?random=8'>
+				</div>
+				<div class='slide slide9'>
+					<img src='https://unsplash.it/1920/1080/?random=9'>
+				</div>
+				<div class='slide slide10'>
+					<img src='https://unsplash.it/1920/1080/?random=10'>
+				</div>
+			</div>
 		</div>
-		<div class='slide slide2'>
-			<img src='https://unsplash.it/1920/1080/?random=2'>
 		</div>
-		<div class='slide slide3'>
-			<img src='https://unsplash.it/1920/1080/?random=3'>
-		</div>
-		<div class='slide slide4'>
-			<img src='https://unsplash.it/1920/1080/?random=4'>
-		</div>
-		<div class='slide slide5'>
-			<img src='https://unsplash.it/1920/1080/?random=5'>
-		</div>
-		<div class='slide slide6'>
-			<img src='https://unsplash.it/1920/1080/?random=6'>
-		</div>
-		<div class='slide slide7'>
-			<img src='https://unsplash.it/1920/1080/?random=7'>
-		</div>
-		<div class='slide slide8'>
-			<img src='https://unsplash.it/1920/1080/?random=8'>
-		</div>
-		<div class='slide slide9'>
-			<img src='https://unsplash.it/1920/1080/?random=9'>
-		</div>
-		<div class='slide slide10'>
-			<img src='https://unsplash.it/1920/1080/?random=10'>
-		</div>
-	</div>
-</div>
-</div>
+
+		<!-- Destaques da Semana -->
+		<section class="internal-section">
+			<h2 class="section-titulo">
+				Destaques da Semana
+			</h2>
+			<!-- Cards Categorias -->
+			<div class="card" style="margin-left: 0;">
+				<div class="content">
+					<h1>MacBook Pro</h1><img src="https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/07/08143514/Macbook-Pro-PNG-Clipart-Free-1024x1024.png"/>
+				</div>
+				<div class="action-buttons action-buttons--left"><a class="btn" href="#"><i class="fas fa-shopping-cart"></i></a></div>
+				<div class="action-buttons action-buttons--right"><a class="btn" href="#"><i class="fas fa-share-alt"></i></a></div>
+				<div class="backdrop"></div>
+			</div>
+
+			<div class="card">
+				<div class="content">
+					<h1>MacBook Pro</h1><img src="https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/07/08143514/Macbook-Pro-PNG-Clipart-Free-1024x1024.png"/>
+				</div>
+				<div class="action-buttons action-buttons--left"><a class="btn" href="#"><i class="fas fa-shopping-cart"></i></a></div>
+				<div class="action-buttons action-buttons--right"><a class="btn" href="#"><i class="fas fa-share-alt"></i></a></div>
+				<div class="backdrop"></div>
+			</div>
+
+			<div class="card">
+				<div class="content">
+					<h1>Samsumg Galaxy S10</h1><img style="top: 6em;" src="../static/loja/images/samsumg.png"/>
+				</div>
+				<div class="action-buttons action-buttons--left"><a class="btn" href="#"><i class="fas fa-shopping-cart"></i></a></div>
+				<div class="action-buttons action-buttons--right"><a class="btn" href="#"><i class="fas fa-share-alt"></i></a></div>
+				<div class="backdrop"></div>
+			</div>
+
+			<!-- Cards Categorias / END -->
+
+		</section>
+		<!-- Destaques da Semana / END -->
 
 		<!-- Corpo central da página / END -->
 	</section>
@@ -206,6 +246,8 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="../static/loja/js/input-search.js"></script>
+	<!-- <script src="../static/loja/js/card-iterativo.js"></script> -->
+
 </body>
 <!-- Body / END -->
 

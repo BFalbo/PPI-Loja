@@ -21,3 +21,13 @@ body
     position: relative;
     right: -30%;
 }
+
+.internal-section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.internal-section > .section-titulo{
+    color: #a4a4a4;
+}
