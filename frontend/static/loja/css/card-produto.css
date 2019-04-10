@@ -130,7 +130,7 @@
   color: white;
 }
 .card-produto-wrapper .container .bottom .right:hover .remove, .card-produto-wrapper .container .bottom .right:hover .done {
-  transform: translateY(-100%);
+  transform: translateY(-116%);
 }
 .card-produto-wrapper .inside {
   z-index: 9;
