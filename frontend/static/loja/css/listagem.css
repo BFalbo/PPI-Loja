@@ -1,0 +1,50 @@
+#grid-listagem
+{
+    grid-template-columns: 20em auto;
+    display: grid;
+    padding: 0px 0px 0px 70px;
+}
+
+.main-section
+{
+    background-color: #e8e8e8;
+}
+
+.footer, .ltg-lista{
+    background-color: rgb(255, 255, 255);
+}
+
+.grid-item
+{
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+}
+
+.ltg-menu
+{
+    text-align: -webkit-left;
+    padding-left: 25%;
+}
+
+.ltg-menu > .sub-menu
+{
+    margin: 10px 0px 10px 0px;
+}
+
+.ltg-menu > .sub-menu > span
+{
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 0 20px;
+    line-height: 1.25;
+    color: #333;
+}
+
+.ltg-menu > .sub-menu > p
+{
+    color: #666;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+}
+
