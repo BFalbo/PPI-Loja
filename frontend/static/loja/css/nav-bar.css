@@ -13,9 +13,12 @@ html {
 
 header {
     position: relative;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     border-bottom: 1px solid rgba(0,0,0,.1);
+
+    grid-template-columns: auto auto auto;
+    display: grid !important;
 
     /* margin: 0; */
 }
@@ -25,11 +28,18 @@ header > nav > ul > li > a {
     text-decoration: none;
 }
 
+header > nav
+{
+    display: flex !important;
+}
+
 
 .logo-loja {
     box-sizing: content-box;
     padding-left: 50px;
     width: 70px;
+    margin: 0;
+    display: -webkit-inline-box;
 }
 
 .logo-loja > img {

@@ -15,6 +15,12 @@ body
     width: 100%;
 }
 
+#super-header{
+    display: grid;
+    grid-template-columns: 24% auto;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
 #blank-image
 {
     height: 30em;
