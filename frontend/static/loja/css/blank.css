@@ -21,6 +21,33 @@ body
     border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
+@media  screen and (max-width: 1300px) {
+    .small-hide{
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 967px) {
+    .xsmall-hide{
+        display: none;
+    }
+
+    .search-box
+    {
+        width: 40% !important;
+        margin-top: -5px !important;
+    }
+}
+
+@media  screen and (max-width: 520px) {
+
+    .search-box
+    {
+        /* width: 100% !important; */
+        margin: -4px 0 0 0 !important;
+    }
+}
+
 #blank-image
 {
     height: 30em;
