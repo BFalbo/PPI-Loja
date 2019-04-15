@@ -36,6 +36,11 @@ html, body {
   overflow-x: hidden;
 }
 
+.toggle-block
+{
+    position: absolute;
+}
+
 html {
   font-size: 62.5%;
 }
