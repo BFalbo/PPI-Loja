@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="../static/loja/css/blank.css">
 	<link rel="stylesheet" href="../static/loja/css/footer.css">
 	<link rel="stylesheet" href="../static/loja/css/input-search.css">
+
+	<link rel="stylesheet" href="../static/loja/css/user-page.css">
 </head>
 <!-- Head / END -->
 
@@ -40,11 +42,15 @@
 							<form action="" class="search-form">
 								<input type="text" placeholder="Buscar" id="search" autocomplete="off">
 							</form>
-							<svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;"
-							xml:space="preserve">
-						<path class="border" d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280"/>
-						<path class="border" d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280"/>
-						</svg>
+							<svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px"
+								viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;" xml:space="preserve">
+								<path class="border"
+									d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280" />
+								<path class="border"
+									d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280" />
+							</svg>
 							<div class="go-icon"><i class="fa fa-arrow-right"></i></div>
 						</div>
 
@@ -59,11 +65,82 @@
 
 	<section class="main-section">
 		<!-- Corpo central da página -->
-		<div style="height: 700px;">
-			<img id="blank-image" src="../static/loja/images/blank-image.png">
+		<div id="root">
+			<div data-reactroot="" class="settings-container">
+				<div class="left-column">
+					<ul>
+						<li class="tab-btn tab-ativa" tab-pointer="tab-geral">
+							<i class="fas fa-user"></i>
+							Geral
+						</li>
+						<li class="tab-btn" tab-pointer="tab-senha">
+							<i class="fas fa-shield-alt"></i>
+							Senha
+						</li>
+						<li class="tab-btn" tab-pointer="tab-pedidos">
+							<i class="fas fa-ban"></i>
+							Pedidos
+						</li>
+						<li class="tab-btn" tab-pointer="tab-outros">
+							<i class="fas fa-minus-circle"></i>
+							Outros
+						</li>
+					</ul>
+				</div>
+				<div class="settings-tab">
+					<!-- Tab Geral -->
+					<div class="tab tab-geral">
+						<form>
+							<h1>Geral</h1>
+							<div class="input-group">
+								<input type="text" name="first_name" placeholder="Usuário"><label>usuário</label>
+							</div>
+							<div class="input-group"><input type="text" name="first_name"
+									placeholder="exemplo@doamin.com"><label>e-mail</label></div>
+							<div class="btn">Salvar alterações</div>
+						</form>
+					</div>
+
+					<!-- Tab Geral / END -->
+
+					<!-- Tab Senha -->
+					<div class="tab tab-senha" hidden>
+						<form>
+							<h1>Alterar senha</h1>
+							<div class="input-group"><input type="password"><label>senha antiga</label></div>
+							<div class="input-group"><input type="password"><label>nova senha</label></div>
+							<div class="input-group"><input type="password"><label>confirme a nova senha</label>
+							</div>
+							<div class="btn">Salvar alterações</div>
+						</form>
+					</div>
+					<!-- Tab Senha / END -->
+
+					<!-- Tab Pedidos -->
+					<div class="tab tab-pedidos" hidden>
+						<form>
+							<h1>PEDIDOS</h1>
+							<div style="margin-top: 20px;">
+								<p>AQUI APARECERÁ OS PEDIDOS DO CLIENTE</p>
+							</div>
+						</form>
+					</div>
+					<!-- Tab Pedidos / END -->
+
+					<!-- Tab Outros -->
+					<div class="tab tab-outros" hidden>
+						<form>
+							<h1>EM BREVE</h1>
+						</form>
+					</div>
+					<!-- Tab Outros / END -->
+
+				</div>
+			</div>
+
 		</div>
 		<!-- Corpo central da página / END -->
-		
+
 	</section>
 
 	<!-- Footer -->
@@ -113,9 +190,9 @@
 			<div class="col">
 				<h1>Onde nos econtrar</h1>
 				<ul>
-				<li>Facebook</li>
-				<li>Instagram</li>
-				<li>Twitter</li>
+					<li>Facebook</li>
+					<li>Instagram</li>
+					<li>Twitter</li>
 				</ul>
 			</div>
 			<div class="clearfix"></div>
@@ -125,6 +202,8 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="../static/loja/js/input-search.js"></script>
+
+	<script src="../static/loja/js/user-page.js"></script>
 </body>
 <!-- Body / END -->
 
