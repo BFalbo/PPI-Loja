@@ -1,0 +1,92 @@
+
+.ft-green-tick {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.block-msg{
+    margin: 0 auto;
+    width: 30%;
+}
+
+.msg {
+    text-align: center;
+}
+
+.tick {
+  stroke-dasharray: 29px;
+  stroke-dashoffset: 29px;
+  -webkit-animation: draw 0.5s cubic-bezier(0.25, 0.25, 0.25, 1) forwards;
+          animation: draw 0.5s cubic-bezier(0.25, 0.25, 0.25, 1) forwards;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.circle {
+  fill-opacity: 0;
+  stroke: #27bb95;
+  stroke-width: 16px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation: grow 1s cubic-bezier(0.25, 0.25, 0.25, 1.25) forwards;
+          animation: grow 1s cubic-bezier(0.25, 0.25, 0.25, 1.25) forwards;
+}
+
+@-webkit-keyframes grow {
+  60% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    stroke-width: 4px;
+    fill-opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    stroke-width: 8px;
+    fill-opacity: 1;
+    fill: #27bb95;
+  }
+}
+
+@keyframes grow {
+  60% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    stroke-width: 4px;
+    fill-opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    stroke-width: 8px;
+    fill-opacity: 1;
+    fill: #27bb95;
+  }
+}
+@-webkit-keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+body {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.svg-container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}

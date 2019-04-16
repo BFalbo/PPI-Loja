@@ -425,4 +425,8 @@ input {
     .div-avancar > ul{
         margin: 0 auto;
     }
+
+    .creditcard svg#cardfront, .creditcard svg#cardback {
+            width: 90%;
+    }
 }

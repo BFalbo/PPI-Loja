@@ -193,5 +193,13 @@
       width: 100%;
       border-left: 0;
     }
+
+    .tab {
+      left: 0;
+    }
+
+    #root, .settings-container {
+      height: 100%;
+    }
   }
   
