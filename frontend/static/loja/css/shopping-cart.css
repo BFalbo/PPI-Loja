@@ -442,4 +442,10 @@ a.remove:hover {
     width: 100%;
     text-align: center;
   }
+
+  body{
+    width: unset;
+  }
 }
+
+
