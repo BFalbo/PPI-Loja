@@ -7,6 +7,16 @@ header {
   background-color: #16a085;
 }
 
+#span-sair {
+  float: right; 
+  margin: 22px; 
+  color: white;
+}
+#span-sair:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -18,7 +28,16 @@ html, body {
 #responsive-nav {
   display: none;
 }
+
+#admin-logo {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+
 #responsive-nav + label {
+  height: 65px;
   display: none;
   position: fixed;
   top: 0;
@@ -26,7 +45,7 @@ html, body {
   padding: 16px;
   font-size: 20px;
   background: white;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12);
+  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12); */
   cursor: pointer;
   z-index: 3;
   transition: background 0.3s cubic-bezier(0.64, 0.09, 0.08, 1), color 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
@@ -157,15 +176,20 @@ main {
     display: block;
   }
   #responsive-nav:checked + label {
-    color: white;
-    background: #16a085;
+    color:black;
+    background: white;
+    height: 65px;
   }
   #responsive-nav:checked ~ aside {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
 }
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
+  #admin-logo {
+    width: 75%;
+    padding-left: 10px;
+  }
   aside {
     width: 100%;
   }
@@ -174,4 +198,5 @@ main {
     padding: 22px;
     font-size: 24px;
   }
+
 }
