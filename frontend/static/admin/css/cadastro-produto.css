@@ -99,7 +99,7 @@ nav > a, nav label {
 }
 
 #nav-label.clicked {
-  background-color: #16a085;
+  background-color: #01a65a;
   color: white;
   transition-duration: 500ms;
 }
@@ -218,6 +218,7 @@ input[id^="nav-collapsible"]:checked ~ .wrap a {
 }
 
 main {
+  display: table;
   background-color: #ecf0f5;
   width: calc(100% - 230px);
   margin-left: 230px;
