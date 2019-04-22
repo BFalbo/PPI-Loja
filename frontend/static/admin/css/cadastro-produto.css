@@ -13,10 +13,11 @@
 
 header {
   height: 45px;
-  background-color: #16a085;
-  position: relative;
+  background-color: #00a65a;
+  position: fixed;
   max-height: 100px;
   z-index: 1030;
+  width: 100%;
 }
 
 #span-sair {
@@ -73,7 +74,7 @@ aside {
   transition: transform 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   transition: transform 0.3s cubic-bezier(0.64, 0.09, 0.08, 1), -webkit-transform 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   background: white;
-  width: 260px;
+  width: 230px;
   height: 100%;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   z-index: 1;
@@ -94,7 +95,7 @@ nav {
   height: 100%;
 }
 nav > a, nav label {
-  padding: 20px 24px;
+  padding: 13px 24px;
 }
 
 #nav-label.clicked {
@@ -119,16 +120,19 @@ nav > a, nav label {
 }
 
 nav a, nav label {
+  font-size: 14px;
   width: 100%;
   display: block;
   text-decoration: none;
-  color: #525252;
+  color: #777;
   cursor: pointer;
   font-weight: 500;
   transition: none;
+  border-left: 3px solid transparent;
 }
 nav a:hover, nav label:hover {
   background: #ebebeb;
+  color: #000;
 }
 nav label:before, nav label:after {
   content: '';
@@ -177,6 +181,11 @@ nav label:after {
   transition: height 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   display: flex;
   align-items: center;
+  color: #777 !important;
+}
+
+.wrap > a:hover {
+  color: #000 !important;
 }
 
 .div-exemplo {
@@ -189,6 +198,7 @@ input[id^="nav-collapsible"] {
 input[id^="nav-collapsible"]:checked + label {
   transition: background 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), color 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
   background: #ebebeb;
+  color: #000;
 }
 input[id^="nav-collapsible"]:checked + label:before {
   -webkit-transform: rotate(-230deg) translate(5px, -5px);
@@ -204,13 +214,13 @@ input[id^="nav-collapsible"]:checked ~ .wrap {
           transform: scaleY(1);
 }
 input[id^="nav-collapsible"]:checked ~ .wrap a {
-  height: 54px;
+  height: 45px;
 }
 
 main {
   background-color: #ecf0f5;
-  width: calc(100% - 260px);
-  margin-left: 260px;
+  width: calc(100% - 230px);
+  margin-left: 230px;
   height: 100%;
 }
 
