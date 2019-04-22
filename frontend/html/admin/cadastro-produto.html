@@ -51,17 +51,24 @@
   <!-- MAIN -->
   <main>
     <section id="section-header">
-      <h1>Título</h1>
+      <h1>Cadastro de produtos</h1>
     </section>
     <div class="content">
       <div class="box">
-
-        <!-- BODY -->
-        <div class="div-exemplo"><img src="../../static/admin/images/blank-image.png" alt=""
-            style="display: block; margin: auto; padding-top: 131px;"></div>
-        <!-- BODY / END  -->
-
-
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" id="nome">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="quantidade">Quantidade</label>
+            <input type="number" class="form-control" id="quantidade">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="valor">Valor</label>
+            <input type="text" class="form-control money" id="valor">
+          </div>
+        </div>
       </div>
     </div>
 
@@ -81,7 +88,12 @@
     crossorigin="anonymous"></script>
   <script src="../../static/admin/js/admin-blank.js"></script>
 
-  
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  <script src="../../static/admin/js/cadastrar-produto.js"></script>
 </body>
 
 <!-- BODY BLANK / END -->

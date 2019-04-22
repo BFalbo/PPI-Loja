@@ -1,15 +1,27 @@
 * {
   box-sizing: border-box;
 }
+.box {
+  position: relative;
+  border-radius: 3px;
+  background: #ffffff;
+  border-top: 3px solid #d2d6de;
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
 
 header {
-  height: 65px;
+  height: 45px;
   background-color: #16a085;
+  position: relative;
+  max-height: 100px;
+  z-index: 1030;
 }
 
 #span-sair {
   float: right; 
-  margin: 22px; 
+  margin: 10px; 
   color: white;
 }
 #span-sair:hover {
@@ -37,21 +49,25 @@ html, body {
 
 
 #responsive-nav + label {
-  height: 65px;
+  height: 45px;
   display: none;
   position: fixed;
   top: 0;
   left: 0;
-  padding: 16px;
+  padding: 5px 14px 14px;
   font-size: 20px;
   background: white;
   /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 8px 0 rgba(0, 0, 0, 0.12); */
   cursor: pointer;
-  z-index: 3;
+  z-index: 1034;
   transition: background 0.3s cubic-bezier(0.64, 0.09, 0.08, 1), color 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
 }
-
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 aside {
+  margin-top: 45px;
   position: fixed;
   transition: -webkit-transform 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   transition: transform 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
@@ -60,11 +76,12 @@ aside {
   width: 260px;
   height: 100%;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  z-index: 1;
 }
 
 .logo-area {
   width: 100%;
-  height: 65px;
+  height: 45px;
   border-bottom: solid 1px #ebebeb;
   display: flex;
   align-items: center;
@@ -79,6 +96,28 @@ nav {
 nav > a, nav label {
   padding: 20px 24px;
 }
+
+#nav-label.clicked {
+  background-color: #16a085;
+  color: white;
+  transition-duration: 500ms;
+}
+
+.nome-marca {
+  margin: 0 auto;
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  font-size: 29px;
+  float: left;
+  color: white;
+  display: block;
+}
+
+.nome-marca > span {
+  font-weight: 100;
+}
+
 nav a, nav label {
   width: 100%;
   display: block;
@@ -113,6 +152,15 @@ nav label:after {
           transform: rotate(-50deg) translate(-6px, 1px);
 }
 
+.content {
+  min-height: 250px;
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .wrap {
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
@@ -129,6 +177,10 @@ nav label:after {
   transition: height 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   display: flex;
   align-items: center;
+}
+
+.div-exemplo {
+  height: 600px;
 }
 
 input[id^="nav-collapsible"] {
@@ -156,9 +208,22 @@ input[id^="nav-collapsible"]:checked ~ .wrap a {
 }
 
 main {
+  background-color: #ecf0f5;
   width: calc(100% - 260px);
   margin-left: 260px;
   height: 100%;
+}
+
+#section-header {
+  position: relative;
+  padding: 15px 15px 0 15px;
+  background: transparent;
+}
+
+#section-header > h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  font-size: 24px;
 }
 
 @media screen and (max-width: 1120px) {
@@ -178,24 +243,41 @@ main {
   #responsive-nav:checked + label {
     color:black;
     background: white;
-    height: 65px;
+    height: 45px;
   }
   #responsive-nav:checked ~ aside {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+  header {
+    padding-left: 55px;
+  }
+  #nav-label {
+    z-index: 1034;
+  }
+  #admin-logo {
+    width: 75%;
+    padding-left: 10px;
+  }
 }
 @media only screen and (max-width: 700px) {
+  header {
+    padding-left: 55px;
+  }
+  #nav-label {
+    z-index: 1034;
+  }
   #admin-logo {
     width: 75%;
     padding-left: 10px;
   }
   aside {
     width: 100%;
+    box-shadow: none;
   }
 
   #responsive-nav + label {
-    padding: 22px;
+    /* padding: 22px; */
     font-size: 24px;
   }
 
