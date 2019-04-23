@@ -19,10 +19,16 @@
   <label for="responsive-nav" id="nav-label" class="clicked">☰</label>
   <aside>
     <nav>
-      <a>Dashboard</a>
       <div class="nav-collapsible">
         <input type="checkbox" id="nav-collapsible-1">
-        <label for="nav-collapsible-1">Produtos</label>
+        <label for="nav-collapsible-1">Avançado</label>
+        <div class="wrap">
+          <a>Dashboard</a>
+        </div>
+      </div>
+      <div class="nav-collapsible">
+        <input type="checkbox" id="nav-collapsible-2">
+        <label for="nav-collapsible-2">Produtos</label>
         <div class="wrap">
           <a>Cadastrar</a>
           <a>listar</a>
@@ -30,15 +36,14 @@
         </div>
       </div>
       <div class="nav-collapsible">
-        <input type="checkbox" id="nav-collapsible-2">
-        <label for="nav-collapsible-2">Pedidos</label>
+        <input type="checkbox" id="nav-collapsible-3">
+        <label for="nav-collapsible-3">Pedidos</label>
         <div class="wrap">
           <a>Listar</a>
           <a>Concluídos</a>
           <a>Em andamento</a>
         </div>
       </div>
-      <a>Contato</a>
     </nav>
   </aside>
 
@@ -51,16 +56,13 @@
   <!-- MAIN -->
   <main>
     <section id="section-header">
-      <h1>Título</h1>
+      <h1>Cadastro de produtos</h1>
     </section>
     <div class="content">
       <div class="box">
 
-        <!-- BODY -->
         <div class="div-exemplo"><img src="../../static/admin/images/blank-image.png" alt=""
-            style="display: block; margin: auto; padding-top: 131px;"></div>
-        <!-- BODY / END  -->
-
+            style="display: block; margin: 0 auto; padding-top: 10%;"></div>
 
       </div>
     </div>
@@ -81,7 +83,12 @@
     crossorigin="anonymous"></script>
   <script src="../../static/admin/js/admin-blank.js"></script>
 
-  
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  <script src="../../static/admin/js/cadastrar-produto.js"></script>
 </body>
 
 <!-- BODY BLANK / END -->

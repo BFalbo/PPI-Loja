@@ -195,24 +195,49 @@ nav label:after {
 input[id^="nav-collapsible"] {
   display: none;
 }
+
 input[id^="nav-collapsible"]:checked + label {
   transition: background 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), color 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
   background: #ebebeb;
   color: #000;
 }
+
+#input-file-label {
+  cursor: pointer;
+  background: #01a65a;
+  background-color: #01a65a;
+  color: white;
+}
+
 input[id^="nav-collapsible"]:checked + label:before {
   -webkit-transform: rotate(-230deg) translate(5px, -5px);
           transform: rotate(-230deg) translate(5px, -5px);
 }
+
 input[id^="nav-collapsible"]:checked + label:after {
   -webkit-transform: rotate(50deg) translate(5px, -2px);
           transform: rotate(50deg) translate(5px, -2px);
 }
+
+#row-box {
+  margin-top: 20px;
+}
+
+input[type="file"] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
 input[id^="nav-collapsible"]:checked ~ .wrap {
   height: auto;
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
 }
+
 input[id^="nav-collapsible"]:checked ~ .wrap a {
   height: 45px;
 }
@@ -227,7 +252,7 @@ main {
 
 #section-header {
   position: relative;
-  padding: 15px 15px 0 15px;
+  padding: 58px 15px 0 15px;
   background: transparent;
 }
 
