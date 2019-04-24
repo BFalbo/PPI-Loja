@@ -25,6 +25,7 @@
     {
         padding: 0;
         display: -webkit-inline-box;
+        margin: 0 0 0 74px;
     }
 
     .main-section 
@@ -177,3 +178,10 @@ right: -45px;
 }
 
 /*  SEARCH IMPUT LISTAGEM / END */
+
+@media only screen and (max-width: 967px)
+{
+    #grid-listagem {
+        margin: 0 0 0 74px;
+    }
+}
